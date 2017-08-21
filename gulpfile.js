@@ -37,7 +37,6 @@ gulp.task('css-main', ['sass'], function() {
 
 gulp.task('scripts', function() {
     return gulp.src([
-        // 'app/libs/
         ])
         .pipe(concat('libs.min.js'))
         .pipe(uglify())
