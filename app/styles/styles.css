@@ -1,0 +1,10 @@
+@font-face {
+  font-family: 'Arial';
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  min-width: 600px;
+  max-width: 1200px;
+  font-family: "Arial";
+  font-size: 14px; }
