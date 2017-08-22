@@ -12,7 +12,7 @@ html, body {
   background: #1f2833;
   min-width: 600px; }
   .header-content {
-    max-width: 1120px;
+    max-width: 1200px;
     padding: 50px 40px;
     display: -webkit-box;
     display: -webkit-flex;
@@ -30,7 +30,8 @@ html, body {
     -webkit-box-align: center;
     -webkit-align-items: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    margin: 0 auto; }
     .header-content img {
       height: auto;
       margin-right: 70px; }
@@ -39,21 +40,19 @@ html, body {
       font-weight: 400;
       color: #fff;
       margin: 0;
-      text-align: left; }
+      text-align: left;
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3); }
     .header-content br {
       display: none; }
-      @media screen and (max-width: 600px) {
+      @media screen and (max-width: 700px) {
         .header-content br {
           display: block; } }
 
 .content {
   min-width: 520px;
-  max-width: 1120px;
+  max-width: 1200px;
   padding: 30px 40px 0px 40px;
   margin: 0 auto; }
-  @media screen and (max-width: 899px) {
-    .content {
-      padding: 0 40px; } }
   .content h2 {
     font-size: 1.714em;
     font-weight: 700;
@@ -171,3 +170,48 @@ html, body {
         .contentlist-preview p {
           width: auto;
           padding: 0; } }
+
+.offer {
+  background: #363e48;
+  min-width: 600px; }
+  .offer-content {
+    max-width: 1200px;
+    padding: 50px 40px 40px 40px;
+    margin: 0 auto; }
+    .offer-content h2 {
+      font-size: 1.714em;
+      font-weight: 700;
+      color: #ff0e00;
+      text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.3);
+      text-transform: uppercase;
+      margin: 0; }
+    .offer-contentlist {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -webkit-box-pack: justify;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .offer-contentlist img {
+        width: 20vw;
+        height: 150px;
+        -o-object-fit: cover;
+           object-fit: cover;
+        margin: 20px 0; }
+        @media screen and (max-width: 899px) {
+          .offer-contentlist img {
+            width: 25vw; } }
+        @media screen and (max-width: 599px) {
+          .offer-contentlist img {
+            width: 250px; } }

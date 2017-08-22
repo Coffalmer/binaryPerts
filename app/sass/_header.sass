@@ -3,9 +3,10 @@
   min-width: 600px
 
   &-content
-    max-width: 1120px
+    max-width: 1200px
     padding: 50px 40px
     @include flex(row, nowrap, flex-start, center)
+    margin: 0 auto
 
     img
       height: auto
@@ -15,8 +16,9 @@
       @include font(1.786em, 400, $whitecolor)
       margin: 0
       text-align: left
+      text-shadow: 0px 1px 0px rgba(0,0,0,.3)
 
     br
       display: none
-      @media screen and (max-width: 600px)
+      @media screen and (max-width: 700px)
         display: block

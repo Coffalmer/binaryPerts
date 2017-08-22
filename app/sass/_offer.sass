@@ -1,0 +1,27 @@
+.offer
+  background: $secondcolor
+  min-width: 600px
+
+  &-content
+    max-width: 1200px
+    padding: 50px 40px 40px 40px
+    margin: 0 auto
+
+    h2
+      @include font(1.714em,700,$redcolor)
+      text-shadow: 0px 1px 0px rgba(0,0,0,.3)
+      text-transform: uppercase
+      margin: 0
+
+    &list
+      @include flex(row, wrap, space-between, center)
+
+      img
+        width: 20vw
+        height: 150px
+        object-fit: cover
+        margin: 20px 0
+        @media screen and (max-width: 899px)
+          width: 25vw
+        @media screen and (max-width: 599px)
+          width: 250px
