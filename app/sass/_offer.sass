@@ -16,12 +16,26 @@
     &list
       @include flex(row, wrap, space-between, center)
 
-      img
+      a
+        background: $textcolor
         width: 20vw
         height: 150px
-        object-fit: cover
         margin: 20px 0
+        cursor: pointer
         @media screen and (max-width: 899px)
           width: 25vw
         @media screen and (max-width: 599px)
           width: 250px
+
+      img
+        width: 20vw
+        height: 150px
+        object-fit: cover
+        margin: 0
+        @media screen and (max-width: 899px)
+          width: 25vw
+        @media screen and (max-width: 599px)
+          width: 250px
+    
+      img:hover
+        opacity: .3
