@@ -1,12 +1,23 @@
-@import "colors"
-@import "fonts"
+@import 'colors'
+@import 'fonts'
 
 html, body
-  min-width: 600px
-  max-width: 1200px
-  font-family: "Arial"
+  font-family: 'Arial'
   font-size: 14px
+  margin: 0
 
-@mixin font($size, $weight)
+@mixin font($size, $weight, $color)
   font-size: $size
   font-weight: $weight
+  color: $color
+
+@mixin flex($direcrion, $wrap, $justify, $items)
+  display: flex
+  flex-flow: $direcrion $wrap
+  justify-content: $justify
+  align-items: $items
+
+h1
+  @include font(1.786em, 400, $whitecolor)
+  margin: 0
+  text-align: left

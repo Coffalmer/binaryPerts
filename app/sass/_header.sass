@@ -1,0 +1,17 @@
+.header
+  background: $maincolor
+  min-width: 600px
+
+  &-content
+    max-width: 1120px
+    padding: 50px 40px
+    @include flex(row, nowrap, flex-start, center)
+
+    img
+      height: auto
+      margin-right: 70px
+
+    br
+      display: none
+      @media screen and (max-width: 600px)
+        display: block

@@ -4,7 +4,45 @@
   font-style: normal; }
 
 html, body {
-  min-width: 600px;
-  max-width: 1200px;
-  font-family: "Arial";
-  font-size: 14px; }
+  font-family: 'Arial';
+  font-size: 14px;
+  margin: 0; }
+
+h1 {
+  font-size: 1.786em;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  text-align: left; }
+
+.header {
+  background: #1f2833;
+  min-width: 600px; }
+  .header-content {
+    max-width: 1120px;
+    padding: 50px 40px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-flow: row nowrap;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .header-content img {
+      height: auto;
+      margin-right: 70px; }
+    .header-content br {
+      display: none; }
+      @media screen and (max-width: 600px) {
+        .header-content br {
+          display: block; } }
